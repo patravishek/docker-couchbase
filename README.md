@@ -19,5 +19,5 @@ docker logs db3
 If the containers have started, all the above commands should return the following output:
 
 ```bash
-`Starting Couchbase Server -- Web UI available at http://<ip>:8091`
+Starting Couchbase Server -- Web UI available at http://<ip>:8091
 ```
