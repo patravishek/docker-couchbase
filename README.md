@@ -14,7 +14,7 @@ Check the Docker logs to verify that the containers have started:
 docker logs db1
 docker logs db2
 docker logs db3
-``
+```
 
 If the containers have started, all the above commands should return the following output:
 
