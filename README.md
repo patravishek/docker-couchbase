@@ -33,3 +33,20 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' db2
 
 From the browser, access the Web Console using http://localhost:8091. You are now connected to container named db3. If the container is up and running, you will see the Couchbase Server Setup Screen.
 
+![](Screenshot%202020-05-25%20at%204.23.10%20PM.jpeg)
+
+Walk through the Setup wizard and accept the default values, you may switch off the Analytics Service if you're facing shortage of RAM
+
+Next, we need to add the db1 and db2 containers to the cluster.
+
+On the Web Console, go to the Server Nodes tab and click Add Server and specify the IP address you captured for db1.
+
+![](Screenshot%202020-05-25%20at%204.37.08%20PM.png)
+
+Click Add Server again and specify the IP address you captured for db2
+
+Click Rebalance.
+
+![](rebalancing.png)
+
+This is all that is needed for a multi-node Couchbase Server cluster deployment using a single physical machine.
