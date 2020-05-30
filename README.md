@@ -50,3 +50,12 @@ Click Rebalance.
 ![](rebalancing.png)
 
 This is all that is needed for a multi-node Couchbase Server cluster deployment using a single physical machine.
+
+## Setting up data
+
+Create a bucket in the couchbase with name `cachestore` by navigating to buckets menu and then clicking on `ADD BUCKET` located at the top of the screen.
+Now go to the `query` menu and run the following query
+
+```sql
+INSERT INTO `cachestore` (KEY, VALUE) VALUES ("key1", "somevalue1")
+```
